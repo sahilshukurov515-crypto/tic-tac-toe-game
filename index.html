@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOX Oyunu - Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 XOX OYUNU</h1>
+            <p class="subtitle">Bilgisayara Karşı Oyna</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-box">
+                <span class="stat-label">Senin Puanı</span>
+                <span class="stat-value" id="playerScore">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Bilgisayar</span>
+                <span class="stat-value" id="aiScore">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Berabere</span>
+                <span class="stat-value" id="drawScore">0</span>
+            </div>
+        </div>
+
+        <div class="game-status">
+            <p id="status">Oyun Başladı - Senin Sırası</p>
+        </div>
+
+        <div class="game-board" id="gameBoard">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div class="game-info">
+            <p>❌ = Sen | ⭕ = Bilgisayar</p>
+        </div>
+
+        <div class="button-group">
+            <button class="btn btn-reset" id="resetBtn">🔄 Yeni Oyun</button>
+            <button class="btn btn-stats" id="statsBtn">📊 İstatistikleri Sıfırla</button>
+        </div>
+
+        <div class="difficulty">
+            <label for="difficulty">Zorluk Seviyesi:</label>
+            <select id="difficulty">
+                <option value="easy">Kolay</option>
+                <option value="medium" selected>Orta</option>
+                <option value="hard">Zor</option>
+            </select>
+        </div>
+
+        <footer>
+            <p>💡 Yapay Zeka tarafından desteklenen akıllı rakip</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
